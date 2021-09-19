@@ -1,3 +1,4 @@
+@fixture.login_page
 Feature: Login user account
 
   Scenario: Login user account

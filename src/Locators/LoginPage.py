@@ -13,5 +13,9 @@ class LoginPage:
     class Login:
         email = {'CSS_SELECTOR': "#j_username"}
         password = {'CSS_SELECTOR': "#j_password"}
+        forgot_link = {'CSS_SELECTOR': ".js-password-forgotten"}
+        forgot_email = {'CSS_SELECTOR': "input[id='forgottenPwd.email']"}
+        forgot_description = {'XPATH': "//div[@class='description']"}
+        forgot_button = {'XPATH': "//button[normalize-space()='Reset Password']"}
         login_button = {'CSS_SELECTOR': "button[class='btn btn-primary btn-block']"}
 

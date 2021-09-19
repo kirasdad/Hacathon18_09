@@ -7,10 +7,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 
 class BasePage:
-    def __init__(self):
-        options = webdriver.ChromeOptions()
-        options.add_argument('ignore-certificate-errors')
-        self.driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)
+    def __init__(self, driver: webdriver):
+        self.driver = driver
 
     def __element(self, selectors: dict):
         for search_type in selectors.keys():
@@ -37,4 +35,3 @@ class BasePage:
 
     def to_page(self, url):
         self.driver.get(url)
-

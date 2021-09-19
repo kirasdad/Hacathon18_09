@@ -1,3 +1,4 @@
+@fixture.login_page
 Feature: Create an Account
 
   Scenario: Register new user
